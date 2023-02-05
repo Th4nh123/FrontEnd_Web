@@ -1,0 +1,17 @@
+main{
+    margin-top: 100px;
+}
+
+.main--title{
+    color:#203864;
+    border-bottom: 2px solid #203864;
+    width:370px;
+}
+
+.main--title--text{
+    color:#115a80;
+}
+
+a:hover{
+    color:#115a80;
+}

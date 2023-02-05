@@ -1,0 +1,19 @@
+.contact{
+    background-color: #4265a6;
+}
+
+header {
+    transition: top 0.3s;
+    background-color: #f8f9fa;
+}
+
+.logo{
+    height: 70px;
+}
+
+body{
+    height: 1000px;
+}
+.service{
+    height: 400px;
+}
