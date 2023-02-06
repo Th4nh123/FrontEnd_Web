@@ -1,19 +1,15 @@
-.contact{
+.contact {
     background-color: #4265a6;
 }
 
 header {
-    transition: top 0.3s;
-    background-color: #f8f9fa;
+    transition: top 0.2s;
 }
 
-.logo{
+.logo {
     height: 70px;
 }
 
-body{
+body {
     height: 1000px;
-}
-.service{
-    height: 400px;
 }

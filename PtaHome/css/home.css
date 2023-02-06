@@ -11,7 +11,48 @@ main{
 .main--title--text{
     color:#115a80;
 }
+.main--title--text:hover{
+    color:#115a80;
+}
 
 a:hover{
     color:#115a80;
+}
+
+.service {
+    height: 700px;
+}
+
+.all--detail:hover{
+    color:#115a80;
+}
+
+#baivietnoibat {
+    color: #4265a6;
+    border-radius: 9px
+}
+
+#baivietnoibat:hover {
+    color: white;
+    background-image: linear-gradient(to right, #183e72, #319dd7);
+    border-color: inherit;
+    transition: 0.2s;
+}
+
+#baivietpost {
+    overflow: hidden;
+    position: relative;
+}
+
+#baivietpost img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-out;
+    position: relative;
+    z-index: 2;
+}
+
+#baivietpost:hover img {
+    transform: scale(1.2, 1.2);
+    z-index: 9;
 }
