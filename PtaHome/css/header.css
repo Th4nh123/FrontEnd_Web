@@ -4,6 +4,7 @@
 
 header {
     transition: top 0.2s;
+    /* z-index: 10000; */
 }
 
 .logo {
