@@ -1,0 +1,12 @@
+footer {
+  background: linear-gradient(to right, #183e72 100%, #319dd7);
+  background-blend-mode: normal;
+}
+
+#rectangle5 {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: auto 360px;
+}

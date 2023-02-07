@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/footer.css">
   </head>
 
   <body>
     <nav class="w-100 p-0 contact text-white">
-      <div class="row pt-2 pt-md-2 pb-3 g-0">
+      <div class="row pt-2 pt-md-2 pb-3 pb-md-2 g-0">
         <div class="col-12 col-lg-5 col-sm-12 col-md-6 h-100">
           <div class="row h-100 justify-content-center align-items-center g-0">
             <div class="col-6 text-end text-md-end pe-3">
@@ -57,8 +58,8 @@
       </div>
     </nav>
 
-    <header class="container-fluid position-fixed shadow-sm rounded p-0 g-0">
-      <nav class="navbar navbar-expand-lg bg-light">
+    <header class="container-fluid position-absolute fw-2 rounded p-0 g-0">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand m-0 ms-lg-5 p-0 ps-lg-2 opacity-100" href="#">
             <img src="../image/logo_PTA-01.png" class="img-fluid logo" alt="...">
@@ -73,7 +74,6 @@
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
               <button type="button" class="btn-close btn-close-white btn-outline-success" data-bs-dismiss="offcanvas"
                 aria-label="Close">
-
               </button>
             </div>
             <div class="offcanvas-body justify-content-end me-0 me-lg-4 pe-0 pe-lg-4">
@@ -84,13 +84,21 @@
                   </a>
                 </li>
                 <li class="nav-item dropdown me-4">
-                  <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="true">
-                    Giới thiệu
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <a href="#" class="nav-link" data-bs-toggle="dropdown" aria-expanded="true"><span id="introitem">Giới
+                      thiệu</span></a>
+                  <ul class="dropdown-menu p-0">
+                    <li style="width:110%;height:48px;text-align:left"><a class="dropdown-item fs-6 fw-semibold"
+                        href="{{ route('xdsoft.introdution.giangvien')}}"
+                        style="margin-bottom:0px;background-color:white;padding-top:10px;padding-bottom:15px;width:100%">Dịch
+                        vụ của chúng tôi</a></li>
+                    <li style="width:110%;height:48px;text-align:left"><a class="dropdown-item fs-6 fw-semibold"
+                        href="{{ route('xdsoft.introdution.giangvien')}}"
+                        style="margin-bottom:0px;background-color:white;padding-top:10px;padding-bottom:15px;width:100%">Giảng
+                        viên</a></li>
+                    <li style="width:110%;height:48px;text-align:left"><a class="dropdown-item fs-6 fw-semibold"
+                        href="{{ route('xdsoft.introdution.camnhan')}}"
+                        style="margin-bottom:0px;background-color:white;padding-top:10px;padding-bottom:15px;width:100%">Giá
+                        trị cốt lõi</a></li>
                   </ul>
                 </li>
                 <li class="nav-item me-3">
@@ -114,8 +122,28 @@
       </nav>
     </header>
 
-    <main>
-      <nav class="container text-center mb-5 ">
+    <nav id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item overflow-hidden position-relative active" data-bs-interval="60000" id="banner">
+          <img src="../image/banner1.jpg" class="d-block w-100 position-relative" alt="...">
+        </div>
+        <div class="carousel-item overflow-hidden position-relative active" data-bs-interval="30000" id="banner">
+          <img src="../image/banner2.jpg" class="d-block w-100 position-relative" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev text-light" type="button" data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+        <span class="visually-hidden text-black">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </nav>
+
+    <main class="mt-5 pt-4">
+      <nav class="container text-center mb-5">
         <div class="row justify-content-center align-items-center g-2">
           <div class="col-11 col-xxl-4 col-xl-5 col-lg-6 col-md-7 main--title">
             <a href="#" class="fs-2 fw-semibold text-decoration-none main--title--text">
@@ -159,7 +187,7 @@
         </div>
       </nav>
 
-      <nav class="container text-center">
+      <nav class="container pt-3 text-center">
         <div class="row justify-content-center align-items-center g-2">
           <div class="col-9 col-xxl-3 col-lg-4 col-md-6 col-sm-7 main--title">
             <a href="#" class="fs-2 fw-semibold text-decoration-none main--title--text">
@@ -212,12 +240,17 @@
         </div>
       </nav>
 
-      <div class="container" style="margin-bottom:70px;text-align:center">
-        <a href="./software.html" class="btn btn-outline-dark all--detail" style="font-weight: 500;">Xem
-          tất cả phần mềm</a>
+      <div class="container text-center mb-5">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col-3">
+            <a href="./software.html" class="btn btn-outline-dark rounded-pill all--detail w-100 fw-3">
+              Xem tất cả phần mềm
+            </a>
+          </div>
+        </div>
       </div>
 
-      <nav class="container">
+      <nav class="container text-center">
         <div class="row justify-content-center align-items-center g-2">
           <div class="col-9 col-xxl-3 col-lg-4 col-md-6 col-sm-7 main--title">
             <a href="#" class="fs-2 fw-semibold text-decoration-none main--title--text">
@@ -270,129 +303,239 @@
         </div>
       </nav>
 
-      <div class="container" style="margin-bottom:70px;text-align:center">
-        <a href="./khoahoc.html" class="btn btn-outline-dark all--detail" style="font-weight: 500;">Xem
-          tất cả khóa học</a>
+      <div class="container text-center mb-5">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col-3">
+            <a href="./software.html" class="btn btn-outline-dark rounded-pill all--detail w-100"
+              style="font-weight: 500;">
+              Xem tất cả khóa học
+            </a>
+          </div>
+        </div>
       </div>
 
-      <nav class="container text-center w-25">
-        <a href="#" class="fs-3 fw-semibold w-25 p-5 text-decoration-none main--title--text">
-          Tin tức xây dựng
-        </a>
+      <nav class="container text-center">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col-9 col-xxl-3 col-lg-4 col-md-6 col-sm-7 main--title">
+            <a href="#" class="fs-2 fw-semibold text-decoration-none main--title--text">
+              TIN TỨC XÂY DỰNG
+            </a>
+          </div>
+        </div>
       </nav>
 
-      <div class="container">
-        <div class="row">
-          <div class="col p-0">
-            <div class="card-news w-100 p-0 mt-4" 
-              style="height:436px;border-radius:8px;">
-              <a href="#" style="color: black;text-decoration:none">
-                <div class="card-header" style="width:100%;height: 64%" id="baivietpost">
-                  <img style="padding: 0" src="https://nhadep999.net/wp-content/uploads/2021/03/1_76.png" width="100%"
-                    height="270px" class="card-img-top w-100" alt="...">
+      <nav class="container pe-5 ps-5 pt-2 pb-4">
+        <div class="row p-4">
+          <div class="col-4">
+            <a href="" class="text-decoration-none">
+              <div class="card p-0 container border-0 text-start">
+                <div class="card-header p-0" id="baivietpost">
+                  <img src="https://nhadep999.net/wp-content/uploads/2021/03/1_76.png"
+                    class="rounded mx-auto d-block card-img-top img-fluid w-100" alt="...">
                 </div>
-                <div class="card-body" style="margin-left: 3%;margin-right: 3%">
-                  <h6 class="card-title text-title"
-                    style="text-align: center;font-size:19px;font-weight:600;height:26px;overflow: hidden;">
+                <div class="card-body p-1">
+                  <h6 class="card-title text-dark text-center fs-5" style="height:25px;overflow: hidden;">
                     Mẫu biệt thự 2 tầng 8x12m
                   </h6>
-                  <p class="card-text card-des text-des lmt-7r overflow-hidden"
-                    style="margin-top:4px;text-align: center;;font-size:12px;font-weight:500;word-spacing: 0px;height:25px">
+                  <p class="card--text--news card-dark overflow-hidden text-center">
                     Sở hữu diện tích mặt sàn 8x12m và gia chủ có ý định xây nhà
                   </p>
                 </div>
-                <div id="baivietnoibat" style="border:3px solid #4265a6;margin:30px 110px 0 110px;text-align:center">
+                <div class="rounded-pill" style="border:3px solid #4265a6;margin:10px 110px 0 110px;text-align:center">
                   <a style="font-family:'Segoe UI';text-decoration:none;align:center;width:100%" id="baivietnoibat"
                     href="#">
                     <h6 id="baivietnoibat" style="font-size:17px;margin:0%;padding-bottom:6px;padding-top:4px;">Xem
                       thêm</h6>
                   </a>
                 </div>
-              </a>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="" class="text-decoration-none">
+              <div class="card p-0 container border-0 text-start">
+                <div class="card-header p-0" id="baivietpost">
+                  <img src="https://nhadep999.net/wp-content/uploads/2021/03/1_76.png"
+                    class="rounded mx-auto d-block card-img-top img-fluid w-100" alt="...">
+                </div>
+                <div class="card-body p-1">
+                  <h6 class="card-title text-title text-dark"
+                    style="text-align: center;font-size:19px;font-weight:600;height:22px;overflow: hidden;">
+                    Mẫu biệt thự 2 tầng 8x12m
+                  </h6>
+                  <p class="card--text--news card-dark overflow-hidden text-center">
+                    Sở hữu diện tích mặt sàn 8x12m và gia chủ có ý định xây nhà
+                  </p>
+                </div>
+                <div class="rounded-pill" style="border:3px solid #4265a6;margin:10px 110px 0 110px;text-align:center">
+                  <a style="font-family:'Segoe UI';text-decoration:none;align:center;width:100%" id="baivietnoibat"
+                    href="#">
+                    <h6 id="baivietnoibat" style="font-size:17px;margin:0%;padding-bottom:6px;padding-top:4px;">Xem
+                      thêm</h6>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="" class="text-decoration-none">
+              <div class="card p-0 container border-0 text-start">
+                <div class="card-header p-0" id="baivietpost">
+                  <img src="https://nhadep999.net/wp-content/uploads/2021/03/1_76.png"
+                    class="rounded mx-auto d-block card-img-top img-fluid w-100" alt="...">
+                </div>
+                <div class="card-body p-1">
+                  <h6 class="card-title text-title text-dark"
+                    style="text-align: center;font-size:19px;font-weight:600;height:22px;overflow: hidden;">
+                    Mẫu biệt thự 2 tầng 8x12m
+                  </h6>
+                  <p class="card--text--news card-dark overflow-hidden text-center">
+                    Sở hữu diện tích mặt sàn 8x12m và gia chủ có ý định xây nhà
+                  </p>
+                </div>
+                <div class="rounded-pill" style="border:3px solid #4265a6;margin:10px 110px 0 110px;text-align:center">
+                  <a style="font-family:'Segoe UI';text-decoration:none;align:center;width:100%" id="baivietnoibat"
+                    href="#">
+                    <h6 id="baivietnoibat" style="font-size:17px;margin:0%;padding-bottom:6px;padding-top:4px;">Xem thêm
+                    </h6>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </main>
+
+    <footer class="mt-5 w-100">
+      <div class="container p-0" id="rectangle5" style="height:100%;background-image: url('../image/footer.png')">
+        <div class="list-cards row" style="padding-left:0%;margin-left:0%">
+          <div class="card-infor"
+            style="border:none;box-shadow:0px 0px 0px 0px;width: 50%;background-color: inherit;margin-left:0%;padding-left:0;padding-right:3%">
+            <div id="dangkytuva" style="color:inherit">
+              <div class="container"
+                style="color: #ebebeb;font-size: 22px;font-weight: 400;padding-top:24px;padding-bottom:10px;text-align:center;padding-right:10%">
+                Đăng ký tư vấn
+              </div>
+              <form action="">
+                <div>
+                  <div style="width: 270px;float:left;height:63px;padding-left:7%">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control"
+                        style="height:59px;width:100%;background-color:inherit;color:white;border-left: none;border-right: none;border-top: none;border-color:#808080;border-radius:0;padding-bottom:4px"
+                        id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" style="color: white;font-weight: 400;padding-left:0">Họ và
+                        tên</label>
+                    </div>
+                  </div>
+                  <div style="width: 270px;float:left;padding-left:7%;height:63px">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control"
+                        style="height:59px;width:100%;background-color:inherit;color:white;border-left: none;border-right: none;border-top: none;border-color:#808080;border-radius:0;padding-bottom:4px"
+                        id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" style="color: white;font-weight: 400;padding-left:0">Gmail</label>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div style="width: 270px;float:left;height:63px;padding-left:7%">
+                    <div class="form-floating mb-3">
+                      <input type="number" class="form-control"
+                        style="height:59px;width:100%;background-color:inherit;color:white;border-left: none;border-right: none;border-top: none;border-color:#808080;border-radius:0;padding-bottom:4px"
+                        id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" style="color: white;font-weight: 400;padding-left:0">Số điện
+                        thoại</label>
+                    </div>
+                  </div>
+                  <div style="width: 270px;float:left;padding-left:7%;height:63px">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control"
+                        style="height:59px;width:100%;background-color:inherit;color:white;border-left: none;border-right: none;border-top: none;border-color:#808080;border-radius:0;padding-bottom:4px"
+                        id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" style="color: white;font-weight: 400;padding-left:0">Tỉnh/Thành
+                        phố</label>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div style="width: 87%;float:left;height:63px;padding-left:7%">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control"
+                        style="height:59px;width:100%;background-color:inherit;color:white;border-left: none;border-right: none;border-top: none;border-color:#808080;border-radius:0;padding-bottom:4px"
+                        id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" style="color: white;font-weight: 400;padding-left:0">Lời nhắn</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="container"
+                  style="color: #ebebeb;font-size: 22px;font-weight: 400;padding-top:160px;padding-bottom:50px;text-align:center;padding-right:10%">
+                  <button type="submit"
+                    style="font-size:20px;border-radius: 5px;width:270px;height:35px;border:none;font-weight: 500;margin-top:50px">Đăng
+                    ký</button>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="col">
-            <div class="card-news w-100"
-            style="margin-top:15px;width: 28%;padding:0;margin-bottom: 30px;height:436px;border-radius:8px;">
-            <a href="#" style="color: black;text-decoration:none">
-              <div class="card-header" style="width:100%;height: 64%" id="baivietpost">
-                <img style="padding: 0" src="https://nhadep999.net/wp-content/uploads/2021/03/1_76.png" width="100%"
-                  height="270px" class="card-img-top w-100" alt="...">
+          <div class="card-infor"
+            style="margin:0;padding:0;border-left:2px solid #808080;margin-top: 30px;border-radius:0%;border-right:none;box-shadow:0px 0px 0px 0px;width: 45%;background-color: inherit;padding-left:10px">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <div style="width: 100%">
+                  <div style="color: #ebebeb;font-size: 22px;font-weight: 700;padding-left:1%;padding-top:0px">
+                    Liên Hệ
+                  </div>
+                  <div style="color: #ebebeb;font-size: 17px;font-weight: 300;padding-left:2%;padding-top:0px">
+                    <i class="fas fa-map-marker-alt" style="color: #ffffff;font-size:15px;margin-right:2px"></i>
+                    Địa chỉ: 12 ngoc 139 phố Tân Mai-phường Tân Mai-quận Hoàng Mai-Hà Nội
+                  </div>
+                  <a href="#"
+                    style="display:block;text-decoration:none;color: #ebebeb;font-size: 17px;font-weight: 300;padding-left:2%;padding-top:0px">
+                    <i class="fa fa-envelope" style="color: #ffffff;font-size:15px;margin-right:2px"></i>
+                    gmail: Info@ptahome.vn
+                  </a>
+                  <a href="#"
+                    style="display:block;text-decoration:none;color: #ebebeb;font-size: 17px;font-weight: 300;padding-left:2%;padding-top:0px">
+                    <i class="fa fa-phone" style="color: #ffffff;font-size:15px;margin-right:2px"></i>
+                    SDT: 0911956655
+                  </a>
+                  <a href="#"
+                    style="display:block;text-decoration:none;color: #ebebeb;font-size: 17px;font-weight: 300;padding-left:2%;padding-top:0px">
+                    <i class="fa fa-globe" style="color: #ffffff;font-size:15px;margin-right:2px"></i>
+                    http://ptahome.vn/
+                  </a>
+                </div>
               </div>
-              <div class="card-body" style="margin-left: 3%;margin-right: 3%">
-                <h6 class="card-title text-title"
-                  style="text-align: center;font-size:19px;font-weight:600;height:26px;overflow: hidden;">
-                  Mẫu biệt thự 2 tầng 8x12m
-                </h6>
-                <p class="card-text card-des text-des lmt-7r overflow-hidden"
-                  style="margin-top:4px;text-align: center;;font-size:12px;font-weight:500;word-spacing: 0px;height:25px">
-                  Sở hữu diện tích mặt sàn 8x12m và gia chủ có ý định xây nhà
-                </p>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-5 p-0">
+                <div style="width: 100%">
+                  <div style="color: #ebebeb;font-size: 22px;font-weight: 700;padding-left:4%">
+                    Giới thiệu
+                  </div>
+                  <a href="#"
+                    style="display:block;text-decoration:none;color: #ebebeb;font-size: 17px;font-weight: 300;padding-left:4%;padding-top:0px;margin-bottom:5px">
+                    PTA Design & Software
+                  </a>
+                  <a href="#"
+                    style="display:block;text-decoration:none;color: #ebebeb;font-size: 17px;font-weight: 300;padding-left:4%;padding-top:0px;margin-bottom:5px">
+                    Tư vấn giải pháp công nghệ phần mềm trong Xây dựng
+                  </a>
+                  <a href="#"
+                    style="display:block;text-decoration:none;color: #ebebeb;font-size: 17px;font-weight: 300;padding-left:4%;padding-top:0px;margin-bottom:5px">
+                    Kiến trúc và Nội thật
+                  </a>
+                  <a href="#"
+                    style="display:block;text-decoration:none;color: #ebebeb;font-size: 17px;font-weight: 300;padding-left:4%;padding-top:0px;margin-bottom:5px">
+                    Tư vấn thiết kế - Thi công
+                  </a>
+                </div>
               </div>
-              <div id="baivietnoibat" style="border:3px solid #4265a6;margin:30px 110px 0 110px;text-align:center">
-                <a style="font-family:'Segoe UI';text-decoration:none;align:center;width:100%" id="baivietnoibat"
-                  href="#">
-                  <h6 id="baivietnoibat" style="font-size:17px;margin:0%;padding-bottom:6px;padding-top:4px;">Xem
-                    thêm</h6>
-                </a>
-              </div>
-            </a>
-          </div>
-          </div>
-          <div class="col">
-            <div class="card-news w-100"
-            style="margin-top:15px;width: 28%;padding:0;margin-bottom: 30px;height:436px;border-radius:8px;">
-            <a href="#" style="color: black;text-decoration:none">
-              <div class="card-header" style="width:100%;height: 64%" id="baivietpost">
-                <img style="padding: 0" src="https://nhadep999.net/wp-content/uploads/2021/03/1_76.png" width="100%"
-                  height="270px" class="card-img-top w-100" alt="...">
-              </div>
-              <div class="card-body" style="margin-left: 3%;margin-right: 3%">
-                <h6 class="card-title text-title"
-                  style="text-align: center;font-size:19px;font-weight:600;height:26px;overflow: hidden;">
-                  Mẫu biệt thự 2 tầng 8x12m
-                </h6>
-                <p class="card-text card-des text-des lmt-7r overflow-hidden"
-                  style="margin-top:4px;text-align: center;;font-size:12px;font-weight:500;word-spacing: 0px;height:25px">
-                  Sở hữu diện tích mặt sàn 8x12m và gia chủ có ý định xây nhà
-                </p>
-              </div>
-              <div id="baivietnoibat" style="border:3px solid #4265a6;margin:30px 110px 0 110px;text-align:center">
-                <a style="font-family:'Segoe UI';text-decoration:none;align:center;width:100%" id="baivietnoibat"
-                  href="#">
-                  <h6 id="baivietnoibat" style="font-size:17px;margin:0%;padding-bottom:6px;padding-top:4px;">Xem
-                    thêm</h6>
-                </a>
-              </div>
-            </a>
-          </div>
-          </div>
-
-        </div>
-      </div>
-
-    </main>
-    <!-- <footer class="bg-#183e72 text-white py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <form>
-              <div class="form-group">
-                <label for="emailInput">Đăng ký nhận bản tin</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="Nhập email của bạn">
-              </div>
-              <button type="submit" class="btn btn-primary">Đăng ký</button>
-            </form>
-          </div>
-          <div class="col-md-6">
-            <p class="text-center">Copyright &copy; Your Website 2023</p>
+            </div>
           </div>
         </div>
       </div>
-    </footer> -->
-    
-    
-    
+    </footer>
+
+
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

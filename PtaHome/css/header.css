@@ -3,8 +3,12 @@
 }
 
 header {
-    transition: top 0.2s;
-    /* z-index: 10000; */
+    /* transition: top 0.2s; */
+    z-index: 2;
+}
+
+#carouselExampleFade{
+    z-index: 1;
 }
 
 .logo {
@@ -13,4 +17,11 @@ header {
 
 body {
     height: 1000px;
+}
+
+.dropdown:hover .dropdown-menu {display:block;color: #3581c4}
+.dropdown-item:hover{color: white;   background: linear-gradient(to right, #183e72, #319dd7 );}
+
+.dropdown{
+    transition: 10s;
 }
