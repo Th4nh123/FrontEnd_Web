@@ -20,7 +20,7 @@ body {
 }
 
 .dropdown:hover .dropdown-menu {display:block;color: #3581c4}
-.dropdown-item:hover{color: white;   background: linear-gradient(to right, #183e72, #319dd7 );}
+.dropdown-item:hover{color: white;   background: linear-gradient(to right, #4265a6  , #319dd7 );}
 
 .dropdown{
     transition: 10s;

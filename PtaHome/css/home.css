@@ -61,8 +61,7 @@ a:hover {
   z-index: 9;
 }
 #banner img {
-  height: 700px;
-  transition: all 9s ease-out;
+  transition: all 8s ease-out;
   z-index: 2;
 }
 
@@ -84,11 +83,8 @@ a:hover {
 
 .card-infor {
   min-width: 350px;
-  /* box-shadow: 0px 2px 4px 0px #64646482; */
-  /* border-radius: 8px; */
   background-color: #fff;
   margin: 15px 15px;
-  /* height: 450px; */
 }
 
 #dangkytuva {
