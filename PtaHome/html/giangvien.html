@@ -22,8 +22,8 @@
     <nav class="w-100 p-0 contact text-white">
       <div class="row pt-2 pt-md-2 pb-3 pb-md-2 g-0">
         <div class="col-12 col-lg-5 col-sm-12 col-md-6 h-100">
-          <div class="row h-100 justify-content-center align-items-center g-0">
-            <div class="col-6 text-end text-md-end pe-3">
+          <div class="row h-100 align-items-center g-0">
+            <div class="col-6 col-xl-6 col-md-5 text-end text-md-end pe-3 ps-1">
               <i class="fa fa-phone me-2 opacity-100" aria-hidden="false"></i>
               <span class="text-warning">0911</span>
               <span class="text-warning">956</span>
@@ -58,10 +58,10 @@
       </div>
     </nav>
 
-    <header class="container-fluid position-absolute fw-2 rounded p-0 g-0">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand m-0 ms-lg-5 p-0 ps-lg-2 opacity-100" href="#">
+    <header class="container-fluid fw-2 rounded p-0 g-0">
+      <div class="navbar navbar-expand-lg">
+        <div class="container-xl">
+          <a class="navbar-brand m-0 ms-xl-5 p-0 ps-lg-2 opacity-100" href="./home.html">
             <img src="../image/logo_PTA-01.png" class="img-fluid logo" alt="...">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
@@ -76,42 +76,49 @@
                 aria-label="Close">
               </button>
             </div>
-            <div class="offcanvas-body justify-content-end me-0 me-lg-4 pe-0 pe-lg-4">
+            <div class="offcanvas-body justify-content-end me-0 me-xl-4 pe-0 pe-xl-4">
               <ul class="navbar-nav fs-5">
                 <li class="nav-item me-4">
-                  <a class="nav-link" aria-current="page" href="#">
+                  <a class="nav-link" aria-current="page" href="./home.html">
                     Trang chủ
                   </a>
                 </li>
                 <li class="nav-item dropdown me-4">
-                  <a href="#" class="nav-link" data-bs-toggle="dropdown" aria-expanded="true"><span id="introitem">Giới
-                      thiệu</span></a>
+                  <a href="#" class="nav-link" data-bs-toggle="dropdown" aria-expanded="true">
+                    Giới thiệu
+                  </a>
                   <ul class="dropdown-menu p-0">
-                    <li style="width:110%;height:48px;text-align:left"><a class="dropdown-item fs-6 fw-semibold"
-                        href="./dichvu.html"
-                        style="margin-bottom:0px;background-color:white;padding-top:10px;padding-bottom:15px;width:100%">Dịch
-                        vụ của chúng tôi</a></li>
-                    <li style="width:110%;height:48px;text-align:left"><a class="dropdown-item fs-6 fw-semibold"
-                        href="./giangvien.html"
-                        style="margin-bottom:0px;background-color:white;padding-top:10px;padding-bottom:15px;width:100%">Giảng
-                        viên</a></li>
-                    <li style="width:110%;height:48px;text-align:left"><a class="dropdown-item fs-6 fw-semibold"
-                        href="./camnhan.html"
-                        style="margin-bottom:0px;background-color:white;padding-top:10px;padding-bottom:15px;width:100%">Giá
-                        trị cốt lõi</a></li>
+                    <li class="dropdown-navbar">
+                      <a class="dropdown-item fs-6 fw-semibold" href="./dichvu.html">
+                        Dịch vụ của chúng tôi
+                      </a>
+                    </li>
+                    <li class="dropdown-navbar">
+                      <a class="dropdown-item fs-6 fw-semibold" href="./giangvien.html">
+                        Giảng viên
+                      </a>
+                    </li>
+                    <li class="dropdown-navbar">
+                      <a class="dropdown-item fs-6 fw-semibold" href="./camnhan.html">
+                        Giá trị cốt lõi
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item me-3">
-                  <a class="nav-link" href="#">Tin tức</a>
+                  <a class="nav-link" href="./tintuc.html">Tin tức</a>
                 </li>
                 <li class="nav-item me-3">
-                  <a class="nav-link" href="#">Phần mềm</a>
+                  <a class="nav-link" href="./software.html">Phần mềm</a>
                 </li>
                 <li class="nav-item me-3">
-                  <a class="nav-link" href="#">Thiết kế</a>
+                  <a class="nav-link" href="./thietke.html">Thiết kế</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="./khoahoc.html">Khóa học</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="#">
+                  <a class="nav-link me-3" href="#">
                     <i class="fa fa-cart-plus fs-2" aria-hidden="true"></i>
                   </a>
                 </li>
@@ -119,298 +126,51 @@
             </div>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <nav id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item overflow-hidden position-relative active" data-bs-interval="60000" id="banner">
-          <img src="../image/banner1.jpg" class="d-block w-100 position-relative" alt="...">
-        </div>
-        <div class="carousel-item overflow-hidden position-relative" data-bs-interval="30000" id="banner">
-          <img src="../image/banner2.jpg" class="d-block w-100 position-relative" alt="...">
-        </div>
-        <div class="carousel-item overflow-hidden position-relative" data-bs-interval="30000" id="banner">
-          <img src="../image/banner3.jpg" class="d-block w-100 position-relative" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev text-light" type="button" data-bs-target="#carouselExampleFade"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-        <span class="visually-hidden text-black">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <nav class="container-fluid p-0">
+      <img src="../image/GioiThieu/bannergiangvien.svg" class="img-fluid w-100" alt="...">
     </nav>
 
     <main class="mt-5 pt-4">
-      <nav class="container text-center mb-5">
-        <div class="row justify-content-center align-items-center g-2">
-          <div class="col-11 col-xxl-4 col-xl-5 col-lg-6 col-md-7 main--title">
-            <a href="#" class="fs-2 fw-semibold text-decoration-none main--title--text">
-              DỊCH VỤ CỦA CHÚNG TÔI
-            </a>
+      <div class="container">
+        <div class="list-cards row p-0">
+          <div class="card p-0 box" style="margin-left:0px;width: 18rem;margin-bottom:30px;height:400px">
+            <img src="https://spec.edu.vn/uploadfileimage/spec/giangvien/2542295001.jpg" width="100%" height="340px"
+              class="card-img-top" alt="...">
+            <div class="card-body" style="background: linear-gradient(to right, #183e72,#319dd7, #319dd7 );color:white">
+              <h5 class="card-text">Nguyễn Tuấn Anh</h5>
+            </div>
           </div>
-        </div>
-      </nav>
-
-      <nav class="container-fluid p-0 mb-5">
-        <div class="row g-0">
-          <div class="col-12 col-lg-5 p-0">
-            <a href="./thietke.html">
-              <img src="../image/thietkekientrucnew1.svg" class="img-fluid w-100" alt="...">
-            </a>
+          <div class="card p-0" style="width: 18rem;margin-bottom:30px;height:380px">
+            <img src="https://spec.edu.vn/uploadfileimage/spec/giangvien/161436100cuong.jpg" width="100%" height="340px"
+              class="card-img-top" alt="...">
+            <div class="card-body" style="background: linear-gradient(to right, #183e72,#319dd7, #319dd7 );color:white">
+              <h5 class="card-text">Nguyễn Phú Cường</h5>
+            </div>
           </div>
-          <div class="col-12 col-lg-7 p-0">
-            <div class="row g-0">
-              <div class="col-12 col-md-6 p-0">
-                <a href="./thietke.html">
-                  <img src="../image/daotaolaptrinhnew1.svg" class="img-fluid w-100" alt="...">
-                </a>
-              </div>
-              <div class="col-12 col-md-6 p-0">
-                <a href="./thietke.html">
-                  <img src="../image/thietkeketcaunew1.svg" class="img-fluid w-100" alt="...">
-                </a>
-              </div>
-              <div class="col-12 col-md-6 p-0">
-                <a href="./thietke.html">
-                  <img src="../image/phattrienphanmemnew1.svg" class="img-fluid w-100" alt="...">
-                </a>
-              </div>
-              <div class="col-12 col-md-6 p-0">
-                <a href="./thietke.html">
-                  <img src="../image/thicongtrongoinew1.svg" class="img-fluid w-100" alt="...">
-                </a>
-              </div>
+          <div class="card p-0" style="width: 18rem;margin-bottom:30px;height:380px">
+            <img src="https://spec.edu.vn/uploadfileimage/spec/giangvien/330828800phucpd.jpg" width="100%"
+              height="340px" class="card-img-top" alt="...">
+            <div class="card-body" style="background: linear-gradient(to right, #183e72,#319dd7, #319dd7 );color:white">
+              <h5 class="card-text">Phùng Đăng Phúc</h5>
+            </div>
+          </div>
+          <div class="card p-0" style="width: 18rem;margin-bottom:30px;height:380px">
+            <img src="https://spec.edu.vn/uploadfileimage/spec/giangvien/922121200nguyenhv.jpg" width="100%"
+              height="340px" class="card-img-top" alt="...">
+            <div class="card-body" style="background: linear-gradient(to right, #183e72,#319dd7, #319dd7 );color:white">
+              <h5 class="card-text">Hoàng Văn Nguyên</h5>
             </div>
           </div>
         </div>
-      </nav>
-
-      <nav class="container pt-3 text-center">
-        <div class="row justify-content-center align-items-center g-2">
-          <div class="col-9 col-xxl-3 col-lg-4 col-md-6 col-sm-7 main--title">
-            <a href="#" class="fs-2 fw-semibold text-decoration-none main--title--text">
-              PHẦN MỀM NỔI BẬT
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <nav class="container pe-5 ps-5 pt-2">
-        <div class="row justify-content-center p-4">
-          <div class="col-12 col-xl-4 col-md-6 mb-5">
-            <a href="" class="text-decoration-none">
-              <div class="card card-hover w-100 p-0 container border-0 text-start">
-                <img src="https://rdsic.edu.vn/img/images/products/nh0.png"
-                  class="rounded mx-auto d-block card-img-top img-fluid w-100" alt="...">
-                <div class="card-body mb-3">
-                  <h5 class="card-title overflow-hidden text-black">Phần Mềm ARac</h5>
-                  <p class="card-text fw-semibold fs-5">8,000,000đ</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-xl-4 col-md-6 mb-5">
-            <a href="" class="text-decoration-none">
-              <div class="card card-hover w-100 p-0 w-100 container-fluid border-0 text-start">
-                <img src="https://rdsic.edu.vn/img/images/products/logordsteel0.png"
-                  class="card-img-top w-100 rounded mx-auto d-block" alt="...">
-                <div class="card-body mb-3">
-                  <h5 class="card-title overflow-hidden text-black">Phần mềm phân tích thiết kế khung thép - RDSteel
-                  </h5>
-                  <p class="card-text fw-semibold fs-5">8,000,000đ</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-xl-4 col-md-6 mb-5">
-            <a href="" class="text-decoration-none">
-              <div class="card card-hover w-100 p-0 container-fluid border-0 text-start">
-                <img src="https://rdsic.edu.vn/img/images/products/logordcad0.png" class="card-img-top img-fluid w-100"
-                  alt="...">
-                <div class="card-body mb-3">
-                  <h5 class="card-title overflow-hidden text-black">Phần mềm hỗ trợ vẽ kết cấu xây dựng và tiên
-                    lượng - RDCAD</h5>
-                  <p class="card-text fw-semibold fs-5">8,000,000đ</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <div class="container text-center mb-5">
-        <div class="row justify-content-center align-items-center g-2">
-          <div class="col-8 col-lg-3">
-            <a href="./software.html" class="btn btn-outline-dark rounded-pill all--detail w-100 fw-3">
-              Xem tất cả phần mềm
-            </a>
-          </div>
-        </div>
       </div>
-
-      <nav class="container pt-3 text-center">
-        <div class="row justify-content-center align-items-center g-2">
-          <div class="col-9 col-xxl-3 col-lg-4 col-md-6 col-sm-7 main--title">
-            <a href="#" class="fs-2 fw-semibold text-decoration-none main--title--text">
-              PHẦN MỀM NỔI BẬT
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <nav class="container pe-5 ps-5 pt-2">
-        <div class="row justify-content-center p-4">
-          <div class="col-12 col-xl-4 col-md-6 mb-5">
-            <a href="" class="text-decoration-none">
-              <div class="card card-hover w-100 p-0 container border-0 text-start">
-                <img src="https://rdsic.edu.vn/img/images/products/nh0.png"
-                  class="rounded mx-auto d-block card-img-top img-fluid w-100" alt="...">
-                <div class="card-body mb-3">
-                  <h5 class="card-title overflow-hidden text-black">Phần Mềm ARac</h5>
-                  <p class="card-text fw-semibold fs-5">8,000,000đ</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-xl-4 col-md-6 mb-5">
-            <a href="" class="text-decoration-none">
-              <div class="card card-hover w-100 p-0 w-100 container-fluid border-0 text-start">
-                <img src="https://rdsic.edu.vn/img/images/products/logordsteel0.png"
-                  class="card-img-top w-100 rounded mx-auto d-block" alt="...">
-                <div class="card-body mb-3">
-                  <h5 class="card-title overflow-hidden text-black">Phần mềm phân tích thiết kế khung thép - RDSteel
-                  </h5>
-                  <p class="card-text fw-semibold fs-5">8,000,000đ</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-xl-4 col-md-6 mb-5">
-            <a href="" class="text-decoration-none">
-              <div class="card card-hover w-100 p-0 container-fluid border-0 text-start">
-                <img src="https://rdsic.edu.vn/img/images/products/logordcad0.png" class="card-img-top img-fluid w-100"
-                  alt="...">
-                <div class="card-body mb-3">
-                  <h5 class="card-title overflow-hidden text-black">Phần mềm hỗ trợ vẽ kết cấu xây dựng và tiên
-                    lượng - RDCAD</h5>
-                  <p class="card-text fw-semibold fs-5">8,000,000đ</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <div class="container text-center mb-5">
-        <div class="row justify-content-center align-items-center g-2">
-          <div class="col-8 col-lg-3">
-            <a href="./software.html" class="btn btn-outline-dark rounded-pill all--detail w-100 fw-3">
-              Xem tất cả phần mềm
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <nav class="container text-center">
-        <div class="row justify-content-center align-items-center g-2">
-          <div class="col-9 col-xxl-3 col-lg-4 col-md-6 col-sm-7 main--title">
-            <a href="#" class="fs-2 fw-semibold text-decoration-none main--title--text">
-              TIN TỨC XÂY DỰNG
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <nav class="container pe-5 ps-5 pt-2">
-        <section class="row justify-content-center p-4">
-          <div class="col-12 col-xl-4 col-md-6 mb-5">
-            <a href="" class="text-decoration-none">
-              <div class="card p-0 container border-0 text-start">
-                <div class="card-header p-0" id="baivietpost">
-                  <img src="https://nhadep999.net/wp-content/uploads/2021/03/1_76.png"
-                    class="rounded mx-auto d-block card-img-top img-fluid w-100" alt="...">
-                </div>
-                <div class="card-body p-1">
-                  <h6 class="card-title text-dark text-center fs-5" style="height:25px;overflow: hidden;">
-                    Mẫu biệt thự 2 tầng 8x12m
-                  </h6>
-                  <p class="card--text--news card-dark overflow-hidden text-center">
-                    Sở hữu diện tích mặt sàn 8x12m và gia chủ có ý định xây nhà
-                  </p>
-                </div>
-                <div class="rounded-pill" style="border:3px solid #4265a6;margin:10px 110px 0 110px;text-align:center">
-                  <a style="font-family:'Segoe UI';text-decoration:none;align:center;width:100%" id="baivietnoibat"
-                    href="#">
-                    <h6 id="baivietnoibat" style="font-size:17px;margin:0%;padding-bottom:6px;padding-top:4px;">Xem
-                      thêm</h6>
-                  </a>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-xl-4 col-md-6 mb-5">
-            <a href="" class="text-decoration-none">
-              <div class="card p-0 container border-0 text-start">
-                <div class="card-header p-0" id="baivietpost">
-                  <img src="https://nhadep999.net/wp-content/uploads/2021/03/1_76.png"
-                    class="rounded mx-auto d-block card-img-top img-fluid w-100" alt="...">
-                </div>
-                <div class="card-body p-1">
-                  <h6 class="card-title text-title text-dark"
-                    style="text-align: center;font-size:19px;font-weight:600;height:22px;overflow: hidden;">
-                    Mẫu biệt thự 2 tầng 8x12m
-                  </h6>
-                  <p class="card--text--news card-dark overflow-hidden text-center">
-                    Sở hữu diện tích mặt sàn 8x12m và gia chủ có ý định xây nhà
-                  </p>
-                </div>
-                <div class="rounded-pill" style="border:3px solid #4265a6;margin:10px 110px 0 110px;text-align:center">
-                  <a style="font-family:'Segoe UI';text-decoration:none;align:center;width:100%" id="baivietnoibat"
-                    href="#">
-                    <h6 id="baivietnoibat" style="font-size:17px;margin:0%;padding-bottom:6px;padding-top:4px;">Xem
-                      thêm</h6>
-                  </a>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-xl-4 col-md-6 mb-5">
-            <a href="" class="text-decoration-none">
-              <div class="card p-0 container border-0 text-start">
-                <div class="card-header p-0" id="baivietpost">
-                  <img src="https://nhadep999.net/wp-content/uploads/2021/03/1_76.png"
-                    class="rounded mx-auto d-block card-img-top img-fluid w-100" alt="...">
-                </div>
-                <div class="card-body p-1">
-                  <h6 class="card-title text-title text-dark"
-                    style="text-align: center;font-size:19px;font-weight:600;height:22px;overflow: hidden;">
-                    Mẫu biệt thự 2 tầng 8x12m
-                  </h6>
-                  <p class="card--text--news card-dark overflow-hidden text-center">
-                    Sở hữu diện tích mặt sàn 8x12m và gia chủ có ý định xây nhà
-                  </p>
-                </div>
-                <div class="rounded-pill" style="border:3px solid #4265a6;margin:10px 110px 0 110px;text-align:center">
-                  <a style="font-family:'Segoe UI';text-decoration:none;align:center;width:100%" id="baivietnoibat"
-                    href="#">
-                    <h6 id="baivietnoibat" style="font-size:17px;margin:0%;padding-bottom:6px;padding-top:4px;">Xem thêm
-                    </h6>
-                  </a>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </nav>
     </main>
 
-    <footer class="mt-5 w-100">
-      <div class="container p-0" id="rectangle5" style="height:100%;background-image: url('../image/footer.png')">
+    <footer class="w-100">
+      <!-- Fixed responsive -->
+      <!-- <div class="container p-0" id="rectangle5" style="height:100%;background-image: url('../image/footer.png')">
         <div class="list-cards row" style="padding-left:0%;margin-left:0%">
           <div class="card-infor"
             style="border:none;box-shadow:0px 0px 0px 0px;width: 50%;background-color: inherit;margin-left:0%;padding-left:0;padding-right:3%">
@@ -533,8 +293,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </footer>
+
 
 
 
