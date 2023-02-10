@@ -1,4 +1,4 @@
-.contact {
+.bg-145982 {
     background-color: #145982;
 }
 
@@ -8,6 +8,10 @@ header {
 
 #carouselExampleFade{
     z-index: 1;
+}
+
+.carousel-caption{
+    z-index: 3;
 }
 
 .logo {
