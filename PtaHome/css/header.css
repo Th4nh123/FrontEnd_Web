@@ -1,10 +1,17 @@
-.contact {
-    background-color: #4265a6;
+.bg-145982 {
+    background-color: #145982;
 }
 
 header {
-    transition: top 0.2s;
-    /* z-index: 10000; */
+    z-index: 2;
+}
+
+#carouselExampleFade{
+    z-index: 1;
+}
+
+.carousel-caption{
+    z-index: 3;
 }
 
 .logo {
@@ -14,3 +21,24 @@ header {
 body {
     height: 1000px;
 }
+
+.dropdown:hover .dropdown-menu {display:block;color: #3581c4}
+.dropdown-item:hover{color: white;   background: linear-gradient(to right, #4265a6  , #319dd7 );}
+.dropdown-item a:hover{color: white;}
+.dropdown-item{
+    padding-top:10px;
+    padding-bottom:15px;
+    width:100%
+}
+.dropdown{
+    transition: 10s;
+}
+
+.dropdown-navbar{
+    width: 110%;
+}
+/* .dropdown-link a{
+    padding-top:10px;
+    padding-bottom:15px;
+    width:100%
+  } */
