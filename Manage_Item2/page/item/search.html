@@ -198,28 +198,18 @@
                         <div class="row mt-3">
                             <div class="col-md-10 offset-md-1">
                                 <div class="list-group">
-                                    <!-- <div class="list-group-item">
+
+
+                                    <div class="list-group-item mt-2">
                                         <div class="row">
-                                            <div class="col px-4">
-                                                <div>
-                                                    <div class="float-right">2021-04-20 04:04pm</div>
-                                                    <h3>Hello World</h3>
-                                                    <p class="mb-0">consectetuer adipiscing elit. Aenean commodo ligula
-                                                        eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-                                                        dis parturient montes, nascetur ridiculus mus.</p>
-                                                </div>
+                                            <div class="col-12 col-xl-auto">
+                                                <img class="img-fluid photo-items" src="../../image/istockphoto.jpg"
+                                                    alt="Photo">
                                             </div>
-                                        </div>
-                                    </div> -->
-                                    <div class="list-group-item">
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <img class="img-fluid" src="../../image/istockphoto.jpg" alt="Photo"
-                                                    style="max-height: 160px;">
-                                            </div>
-                                            <div class="col px-4">
+                                            <div class="col px-4 pt-2">
                                                 <div>
-                                                    <div class="float-right">2021-04-20 10:14pm</div>
+                                                    <div class="float-right pt-2 pt-xl-0 text-date-card">2021-04-20
+                                                        10:14pm</div>
                                                     <h3>Giày Nam Thể Thao</h3>
                                                     <p class="mb-0">Lorem ipsum dolor sit amet consectetur. Sed
                                                         ullamcorper viverra
@@ -233,16 +223,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="list-group-item">
+                                    </div> 
+                                    <div class="list-group-item mt-2">
                                         <div class="row">
-                                            <div class="col-auto">
-                                                <img class="img-fluid" src="../../image/istockphoto.jpg" alt="Photo"
-                                                    style="max-height: 160px;">
+                                            <div class="col-12 col-xl-auto">
+                                                <img class="img-fluid photo-items" src="../../image/istockphoto.jpg"
+                                                    alt="Photo">
                                             </div>
-                                            <div class="col px-4">
+                                            <div class="col px-4 pt-2">
                                                 <div>
-                                                    <div class="float-right">2021-04-20 10:14pm</div>
+                                                    <div class="float-right pt-2 pt-xl-0 text-date-card">2021-04-20
+                                                        10:14pm</div>
                                                     <h3>Giày Nam Thể Thao</h3>
                                                     <p class="mb-0">Lorem ipsum dolor sit amet consectetur. Sed
                                                         ullamcorper viverra
@@ -256,31 +247,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- <div class="list-group-item">
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <iframe width="240" height="160"
-                                                    src="https://www.youtube.com/embed/WEkSYw3o5is?controls=0"
-                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                    class="border-0" allowfullscreen></iframe>
-                                            </div>
-                                            <div class="col px-4">
-                                                <div>
-                                                    <div class="float-right">2021-04-20 11:54pm</div>
-                                                    <h3>Giày Nam Thể Thao</h3>
-                                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur. Sed ullamcorper viverra
-                                                        consequat tempus hac egestas commodo sem fringilla. Amet urna et scelerisque felis. Erat
-                                                        purus vestibulum mauris quis vestibulum neque. Interdum mi varius id viverra felis. Lobortis
-                                                        id egestas eget sem magna tristique aliquet. Aliquet adipiscing sit blandit morbi viverra
-                                                        scelerisque venenatis pharetra</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
+                                    </div> 
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </section>
             </div>
@@ -298,7 +269,6 @@
         <!-- ./wrapper -->
 
         <!-- jQuery -->
-        <!-- jQuery -->
         <script src="../../plugins/jquery/jquery.min.js"></script>
         <!-- Bootstrap 4 -->
         <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -309,6 +279,18 @@
         <script>
             $(function () {
                 $('.select2').select2()
+                console.log($('.photo-items'));
+                setInterval(() => {
+                    if (window.innerWidth > 1200) {
+                        $('.photo-items').css('height', '160px')
+                        $('.text-date-card').removeClass('d-none')
+                        
+                    } else {
+                        $('.text-date-card').addClass('d-none')
+                        $('.photo-items').css('height','100%')
+                        $('.photo-items').css('width', '100%')
+                    }
+                }, 0);
             });
         </script>
     </body>
